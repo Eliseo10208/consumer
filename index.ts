@@ -37,7 +37,7 @@ async function main() {
                 console.log("datos a mandar")
                 console.log(dataToSend)
 
-                await axios.post('http://34.199.77.210:3001/facturas', dataToSend);
+                await axios.post('https://service-payment-8hs5.onrender.com/facturas', dataToSend);
                 console.log('Payment processed');
             } catch (error) {
                 console.error('Error processing message:', error);
